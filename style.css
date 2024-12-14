@@ -1,0 +1,418 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: white;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.head {
+  display: flex;
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  padding: 10px;
+  color: #222731;
+}
+
+.search {
+  height: 69px;
+  width: 730px;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(59, 59, 59, 0.3); /* Adds a subtle shadow */
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchText {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  
+}
+
+.searchText img {
+  margin-left: 35px;
+}
+
+.searchText input {
+  margin-left: 20px;
+  height: 100%;
+  width: 500px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  color: black;
+  background-color: transparent;
+}
+
+::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+.searchBtn {
+  height: 50px;
+  width: 106px;
+  background-color: #0079ff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+  margin-right: 18px;
+  cursor: pointer;
+}
+
+.resultBody {
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(59, 59, 59, 0.3); /* Adds a subtle shadow */
+  width: 730px;
+  height: 419px;
+  border-radius: 15px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainImg {
+  width: 127px;
+  height: 127px;
+  border-radius: 117px;
+  object-fit: contain;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+}
+
+.mainImg img {
+  width: 100%;
+  height: 100%;
+  border-radius: 117px;
+}
+
+.githubHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 650px;
+  margin-top: 30px;
+}
+
+.githubInfo {
+  height: 100%;
+  width: 480px;
+  position: relative;
+}
+
+.githubUser {
+  font-size: 26px;
+  font-weight: bold;
+  color: #20242a;
+}
+
+.githubJoinedDate {
+  position: absolute;
+  top: 7px;
+  right: 0;
+  font-size: 15px;
+  color: #3a404a;
+}
+
+.githubUserName {
+  color: #0079ff;
+  margin-top: 5px;
+}
+
+.githubUserName a {
+  font-size: 16px;
+  color: #0079ff;
+  text-decoration: none;
+}
+.githubFact {
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.githubBio {
+  width: 480px;
+  height: 25px;
+  color: black;
+  margin-top: -30px;
+  margin-bottom: 30px;
+}
+
+.githubRepo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(59, 59, 59, 0.3); /* Adds a subtle shadow */
+  height: 45px;
+  width: 480px;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 5px;
+}
+.repoHeading,
+.followerHeading,
+.followingHeading {
+  font-size: 13px;
+  color: #4b6a9b;
+}
+
+.repoTotal,
+.followerTotal,
+.followingTotal {
+  font-size: 22px;
+  color: #2b3442;
+  font-weight: bold;
+}
+
+.githubSocial {
+  /* border: 2px solid green; */
+  display: grid;
+  grid-template-columns: 300px 250px;
+  row-gap: 1.5em;
+  color: black;
+  margin-top: 30px;
+}
+.location,
+.twitter,
+.website,
+.company {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.location img,
+.twitter img,
+.website img,
+.company img {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Libre Franklin", sans-serif;
+  }
+  .search {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 69px;
+    width: 80%;
+    padding: 10px;
+
+  }
+  .searchText input {
+    width: 70%;
+  }
+
+  .searchBtn {
+    width: 20%;
+    margin-top: 10px;
+  }
+  ::placeholder {
+    color: black;
+    opacity: 1;
+    font-size: 16px;
+  }
+
+  .resultBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: c;
+    align-items: center;
+    width: 80%;
+    padding: 10px;
+    height: auto;
+  }
+
+  .githubHead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: column;
+    width: 650px;
+    margin-top: 30px;
+  }
+  .githubFact {
+    /* width: 650px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .githubInfo {
+    /* border: 2px solid green; */
+/* margin-top: 10px; */
+    height: 100%;
+    width: 380px;
+    position: relative;
+  }
+  .githubBio {
+    /* border: 2px solid green; */
+    display: flex;
+    margin-top: 10px;
+    width: 300px;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+   
+   
+    
+  }
+  .mainImg {
+    width: 150px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: contain;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+  }
+  
+  .mainImg img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+.githubRepo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(59, 59, 59, 0.3); /* Adds a subtle shadow */
+  height: 80px;
+  width: 280px;
+  border-radius: 10px;
+  /* padding: 20px; */
+}
+
+
+.repoHeading,
+.followerHeading,
+.followingHeading {
+  font-size: 13px;
+  color: #4b6a9b;
+}
+
+.repoTotal,
+.followerTotal,
+.followingTotal {
+  font-size: 22px;
+  color: #2b3442;
+  font-weight: bold;
+}
+
+.githubSocial {
+  /* border: 2px solid green; */
+  display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ padding-left: 20px;
+  width: 380px;
+  color: black;
+  margin-top: 30px;
+}
+.location,
+.twitter,
+.website,
+.company {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.location img,
+.twitter img,
+.website img,
+.company img {
+  margin-right: 4px;
+}
+}
+
+@media (max-width: 480px) {
+  .search {
+    
+    display: flex;
+   
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 69px;
+    width: 100%;
+    padding: 10px;
+
+  }
+  .searchText input {
+    width: 70%;
+  }
+
+  .searchBtn {
+    width: 30%;
+    margin-top: 10px;
+  }
+  .head {
+    font-size: 20px;
+  }
+  .resultBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    padding: 15px;
+  }
+  .githubHead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: column;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .githubInfo {
+    height: 100%;
+    width: 280px;
+    position: relative;
+  }
+  .searchText img {
+    margin-left: 5px;
+  }
+
+  .searchText input {
+    font-size: 14px;
+  }
+
+  .searchBtn {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .githubUser {
+    font-size: 18px;
+  }
+}
